@@ -1,0 +1,29 @@
+.fullPage .pf-v6-c-page__main-body {
+  height: 100%;
+}
+
+.fullPage main.pf-v6-c-page__main {
+  overflow-y: clip;
+}
+
+.pf-v6-c-page {
+  --pf-v6-c-page__sidebar--Width--base: 14rem;
+}
+
+.pf-v6-c-button.pf-m-link.pf-m-inline {
+  user-select: auto;
+}
+
+#vg-tooltip-element table tr {
+  /*noinspection CssNoGenericFontName*/
+  font-family: var(--pf-t--global--font--family--body);
+  font-size: var(--pf-t--global--font--size--xs);
+  line-height: var(--pf-t--global--font--line-height--body);
+  color: var(--pf-t--global--text--color--regular);
+  font-weight: var(--pf-t--global--font--weight--body--default);
+}
+
+#vg-tooltip-element table tr td.key {
+  color: var(--pf-t--global--text--color--subtle);
+  font-weight: var(--pf-t--global--font--weight--heading--default);
+}

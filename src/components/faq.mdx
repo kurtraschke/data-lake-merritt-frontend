@@ -1,0 +1,35 @@
+# Frequently Asked Questions
+
+1. **Why are there no arrivals at destination terminals?**
+
+   Unfortunately, BART's GTFS-realtime data simply does not provide arrivals for destination terminals.
+   I get it; most folks _don't_ stand on the platform at a terminal, looking at the transit app of their choice,
+   wondering when the next terminating train will arrive.
+   But, it does make life somewhat inconvenient for other kinds of applications where that information would be useful.
+   We could use departure delay at the penultimate stop and the scheduled arrival time at the terminal to interpolate
+   destination terminal arrivals, and may implement this in the future.
+
+2. **Why don't unscheduled trips appear?**
+
+   At present only scheduled trips are rendered because we would _like_ to have route and direction information for
+   each trip, and that is only available by matching real-time and static trips. Of course this can be worked around,
+   for example by assigning unscheduled trips to a generic route, and we may do this in the future.
+
+3. **What about eBART?**
+
+   eBART basically poses the same problem as unscheduled trips—the trip IDs for eBART trips don't match those in the
+   static GTFS, so we'd have to do a little more processing (which we aren't currently doing) to assign them to a route.
+
+4. **It's too busy!**
+
+   This is what I get for showing both directions at once! But you can click on lines in the legend, or shift-click
+   to select multiple lines, and the unselected lines will be faded out.
+
+5. **Are you really telling me Berryessa is in the north?**
+
+   Timetable north, yes.
+
+6. **Why is it called "Data Lake Merritt"?**
+
+   Because BART Headquarters used to be adjacent to Lake Merritt, and...well, okay, [ClickHouse](https://clickhouse.com/)
+   isn't actually a [data lake](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf), but it's still funny!

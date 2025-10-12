@@ -1,0 +1,53 @@
+{
+  "name": "data-lake-merritt-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^3.1.1",
+    "@patternfly/patternfly": "^6.3.1",
+    "@patternfly/react-core": "^6.3.1",
+    "@patternfly/react-styles": "^6.3.1",
+    "@tanstack/react-query": "^5.90.2",
+    "@tanstack/react-router": "^1.132.47",
+    "@tanstack/react-router-devtools": "^1.132.51",
+    "@types/luxon": "^3.7.1",
+    "luxon": "^3.7.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-vega": "^8.0.0",
+    "temporal-polyfill": "^0.3.0",
+    "vega": "^6.2.0",
+    "vega-embed": "^7.1.0",
+    "vega-lite": "^6.4.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "@mdx-js/rollup": "^3.1.1",
+    "@tanstack/eslint-plugin-query": "^5.91.0",
+    "@tanstack/eslint-plugin-router": "^1.132.31",
+    "@tanstack/router-plugin": "^1.132.51",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "^24.7.2",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.1",
+    "@vitejs/plugin-react-swc": "^4.1.0",
+    "eslint": "^9.37.0",
+    "eslint-plugin-react-dom": "^2.0.6",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "eslint-plugin-react-x": "^2.0.6",
+    "globals": "^16.4.0",
+    "prettier": "3.6.2",
+    "sass-embedded": "^1.93.2",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.0",
+    "vite": "^7.1.7"
+  }
+}
