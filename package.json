@@ -32,7 +32,7 @@
     "@mdx-js/rollup": "^3.1.1",
     "@tanstack/eslint-plugin-query": "^5.91.0",
     "@tanstack/eslint-plugin-router": "^1.132.31",
-    "@tanstack/router-plugin": "^1.132.51",
+    "@tanstack/router-plugin": "^1.132.56",
     "@types/mdx": "^2.0.13",
     "@types/node": "^24.7.2",
     "@types/react": "^19.2.2",
