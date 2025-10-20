@@ -12,8 +12,8 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1(@types/react@19.2.2)(react@19.2.0)
       '@patternfly/patternfly':
-        specifier: ^6.3.1
-        version: 6.3.1
+        specifier: ^6.4.0
+        version: 6.4.0
       '@patternfly/react-core':
         specifier: ^6.3.1
         version: 6.3.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
@@ -613,8 +613,8 @@ packages:
     resolution: {integrity: sha512-dfUnCxiN9H4ap84DvD2ubjw+3vUNpstxa0TneY/Paat8a3R4uQZDLSvWjmznAY/DoahqTHl9V46HF/Zs3F29pg==}
     engines: {node: '>= 10.0.0'}
 
-  '@patternfly/patternfly@6.3.1':
-    resolution: {integrity: sha512-O/lTo5EHKzer/HNzqMQOQEAMG7izDDkEHpAeJ5+sGaeQ/maB3RK7sQsOPS4DjrnMxt4/cC6LogK2mowlbf1j5Q==}
+  '@patternfly/patternfly@6.4.0':
+    resolution: {integrity: sha512-4drFhg74sEc/fftark5wZevODIog17qR4pwLCdB3j5iK3Uu5oMA2SdLhsEeEQggalfnFzve/Km87MdVR0ghhvQ==}
 
   '@patternfly/react-core@6.3.1':
     resolution: {integrity: sha512-1qV20nU4M6PA28qnikH9fPLQlkteaZZToFlATjBNBw7aUI6zIvj7U0akkHz8raWcfHAI+tAzGV7dfKjiv035/g==}
@@ -3116,7 +3116,7 @@ snapshots:
       '@parcel/watcher-win32-x64': 2.5.1
     optional: true
 
-  '@patternfly/patternfly@6.3.1': {}
+  '@patternfly/patternfly@6.4.0': {}
 
   '@patternfly/react-core@6.3.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
