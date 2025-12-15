@@ -34,7 +34,7 @@
     "@tanstack/eslint-plugin-router": "^1.140.0",
     "@tanstack/router-plugin": "^1.140.5",
     "@types/mdx": "^2.0.13",
-    "@types/node": "^25.0.0",
+    "@types/node": "^25.0.2",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react-swc": "^4.2.2",
