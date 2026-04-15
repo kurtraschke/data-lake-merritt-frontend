@@ -46,7 +46,7 @@ const StringlineConfigurationServiceDateRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/faq': typeof FaqRoute
-  '/stringline': typeof StringlineIndexRoute
+  '/stringline/': typeof StringlineIndexRoute
   '/stringline/$configuration/$serviceDate': typeof StringlineConfigurationServiceDateRoute
   '/stringline/$configuration/today': typeof StringlineConfigurationTodayRoute
 }
@@ -70,7 +70,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/faq'
-    | '/stringline'
+    | '/stringline/'
     | '/stringline/$configuration/$serviceDate'
     | '/stringline/$configuration/today'
   fileRoutesByTo: FileRoutesByTo
@@ -116,7 +116,7 @@ declare module '@tanstack/react-router' {
     '/stringline/': {
       id: '/stringline/'
       path: '/stringline'
-      fullPath: '/stringline'
+      fullPath: '/stringline/'
       preLoaderRoute: typeof StringlineIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
