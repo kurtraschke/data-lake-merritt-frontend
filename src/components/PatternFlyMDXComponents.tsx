@@ -60,8 +60,7 @@ export const components: MDXComponents = {
   },
   a: (properties) => {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-argument
-    const isExternal =
-      properties.href != undefined && URL.canParse(properties.href);
+    const isExternal = properties.href != undefined && URL.canParse(properties.href);
 
     return (
       <Button
