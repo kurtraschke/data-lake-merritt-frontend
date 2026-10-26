@@ -41,7 +41,9 @@ const ErrorComponent: ErrorRouteComponent = ({ error }) => {
         <Content component={ContentVariants.p}>Error details:</Content>
 
         <CodeBlock>
-          <CodeBlockCode>{error.message}</CodeBlockCode>
+          <CodeBlockCode>
+            {error instanceof Error ? error.message : JSON.stringify(error)}
+          </CodeBlockCode>
         </CodeBlock>
       </EmptyStateBody>
       <EmptyStateFooter>
