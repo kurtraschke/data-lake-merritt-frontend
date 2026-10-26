@@ -9,20 +9,20 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as FaqRouteImport } from './routes/faq'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as FaqRouteImport } from './routes/faq'
 import { Route as StringlineIndexRouteImport } from './routes/stringline.index'
-import { Route as StringlineConfigurationTodayRouteImport } from './routes/stringline.$configuration.today'
 import { Route as StringlineConfigurationServiceDateRouteImport } from './routes/stringline.$configuration.$serviceDate'
+import { Route as StringlineConfigurationTodayRouteImport } from './routes/stringline.$configuration.today'
 
-const FaqRoute = FaqRouteImport.update({
-  id: '/faq',
-  path: '/faq',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
   getParentRoute: () => rootRouteImport,
 } as any)
 const StringlineIndexRoute = StringlineIndexRouteImport.update({
@@ -30,16 +30,16 @@ const StringlineIndexRoute = StringlineIndexRouteImport.update({
   path: '/stringline/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const StringlineConfigurationTodayRoute =
-  StringlineConfigurationTodayRouteImport.update({
-    id: '/stringline/$configuration/today',
-    path: '/stringline/$configuration/today',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 const StringlineConfigurationServiceDateRoute =
   StringlineConfigurationServiceDateRouteImport.update({
     id: '/stringline/$configuration/$serviceDate',
     path: '/stringline/$configuration/$serviceDate',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const StringlineConfigurationTodayRoute =
+  StringlineConfigurationTodayRouteImport.update({
+    id: '/stringline/$configuration/today',
+    path: '/stringline/$configuration/today',
     getParentRoute: () => rootRouteImport,
   } as any)
 
@@ -99,18 +99,18 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/faq': {
-      id: '/faq'
-      path: '/faq'
-      fullPath: '/faq'
-      preLoaderRoute: typeof FaqRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/stringline/': {
@@ -120,18 +120,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StringlineIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/stringline/$configuration/today': {
-      id: '/stringline/$configuration/today'
-      path: '/stringline/$configuration/today'
-      fullPath: '/stringline/$configuration/today'
-      preLoaderRoute: typeof StringlineConfigurationTodayRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/stringline/$configuration/$serviceDate': {
       id: '/stringline/$configuration/$serviceDate'
       path: '/stringline/$configuration/$serviceDate'
       fullPath: '/stringline/$configuration/$serviceDate'
       preLoaderRoute: typeof StringlineConfigurationServiceDateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stringline/$configuration/today': {
+      id: '/stringline/$configuration/today'
+      path: '/stringline/$configuration/today'
+      fullPath: '/stringline/$configuration/today'
+      preLoaderRoute: typeof StringlineConfigurationTodayRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
