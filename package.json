@@ -22,7 +22,7 @@
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-vega": "^8.0.0",
-    "temporal-polyfill": "^0.3.2",
+    "temporal-polyfill": "^1.0.6",
     "vega": "^6.4.0",
     "vega-embed": "^7.3.0",
     "vega-lite": "^6.5.0"
