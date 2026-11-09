@@ -45,7 +45,7 @@
     "eslint-plugin-react-x": "^5.28.8",
     "globals": "^17.14.0",
     "prettier": "3.9.10",
-    "sass-embedded": "^1.107.1",
+    "sass-embedded": "^1.108.0",
     "typescript": "~6.0.3",
     "typescript-eslint": "^8.72.1",
     "vite": "^8.3.6"
